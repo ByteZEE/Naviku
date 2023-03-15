@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Naviru</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_scan">Pindai</string>
+    <string name="title_create">Buat Kode</string>
+    <string name="title_list">Daftar Kode</string>
+</resources>
