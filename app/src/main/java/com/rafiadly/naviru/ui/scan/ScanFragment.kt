@@ -35,6 +35,10 @@ class ScanFragment : Fragment() {
         return binding.root
 
         cameraExecutor = Executors.newSingleThreadExecutor()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         startCamera()
     }
