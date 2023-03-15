@@ -25,7 +25,6 @@ class ScanFragment : Fragment() {
     private lateinit var cameraExecutor: ExecutorService
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,13 +32,12 @@ class ScanFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentScanBinding.inflate(inflater, container, false)
         return binding.root
-
-        cameraExecutor = Executors.newSingleThreadExecutor()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        cameraExecutor = Executors.newSingleThreadExecutor()
         startCamera()
     }
 
